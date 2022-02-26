@@ -2,7 +2,7 @@
 
 :root{
     --bg-color : #F5F5F5;
-    --blue-light-color: #EAF2FD;
+    --blue-light-color: rgba(234, 242, 253, 1);
     --color:#464646;
     --blue:#2A7AE4;
 }
@@ -118,4 +118,9 @@ main .profile .social .social-network a:hover{
 main .profile .photo img{
     border-radius: 50%;
     opacity: 0.9;
+}
+
+main .about{
+   background: var(--blue-light-color) ;
+   height:383px;
 }
