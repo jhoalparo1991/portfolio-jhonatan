@@ -19,6 +19,7 @@ body{
     background: var(--bg-color)
 }
 
+
 header{
     align-items: center;
     display:flex;
@@ -46,11 +47,11 @@ header .header-group-logo-name p, header .header-contact-email{
     color: var(--color);
 }
 
-header .nav ul{
+header  .nav ul{
     display: flex;
 }
 
-header .nav ul li {
+header  .nav ul li {
     list-style: none;
     margin-left: 32px;
 }
@@ -66,7 +67,7 @@ main{
 
 main .profile{
     height: 368px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content:center;
@@ -122,5 +123,29 @@ main .profile .photo img{
 
 main .about{
    background: var(--blue-light-color) ;
-   height:383px;
+   height:250px;
 }
+
+main .about .group{
+    width: 80%;
+    margin: 0 auto;
+}
+main .about .group .about-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+    padding-top: 64px;
+    margin-bottom: 16px;
+}
+
+main .about .group .text{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.about-title, .text{
+    color: var(--color)
+}
+
+
+
