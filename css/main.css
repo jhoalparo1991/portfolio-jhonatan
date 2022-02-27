@@ -3,6 +3,7 @@
 :root{
     --bg-color : #F5F5F5;
     --blue-light-color: rgba(234, 242, 253, 1);
+    --blue-color-menu: rgb(148, 172, 206);
     --color:#464646;
     --blue:#2A7AE4;
 }
@@ -16,11 +17,25 @@
 }
 
 body{
-    background: var(--bg-color)
+    background: var(--bg-color);
 }
 
-
 header{
+    position: fixed;
+    width: 100%;
+
+}
+
+.down-header{
+    background: var(--blue-color-menu);
+    z-index: 1  ;
+}
+
+.text-white{
+    color: white;
+}
+
+header .banner{
     align-items: center;
     display:flex;
     height: 80px;
@@ -29,33 +44,33 @@ header{
     padding:10px;
     width:80%;
 }
-header .header-group-logo-name{
+header .banner .header-group-logo-name{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .header-group-logo-name img{
+header .banner .header-group-logo-name img{
     width: 32px;
     height: 32px;
     border-radius: 100%;
 }
 
-header .header-group-logo-name p, header .header-contact-email{
+header .banner .header-group-logo-name p, header .header-contact-email{
     font-weight:700;
     font-size: 16px;
     line-height:18.78px;
     color: var(--color);
 }
 
-header  .nav ul{
+header .banner .nav ul{
     display: flex;
 }
 
-header  .nav ul li {
+header .banner  .nav ul li {
     list-style: none;
     margin-left: 32px;
 }
-header .nav ul li a{
+header .banner .nav ul li a{
     text-decoration: none;
     font-weight:500;
     color: var(--color);
@@ -63,6 +78,7 @@ header .nav ul li a{
 }
 main{
     width: 100%;
+    margin-bottom: 100px;
 }
 
 main .profile{
@@ -72,6 +88,7 @@ main .profile{
     display: flex;
     justify-content:center;
     align-items: center;
+    padding-top: 80px;
 }
 
 main .profile .social{
@@ -182,4 +199,43 @@ main .about .group .text{
 .box .box-title{
     font-size: 16px;
     font-weight: 700;
+}
+
+footer{
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    height:50px;
+    z-index: 1;
+    background:var(--blue-color-menu);
+    opacity: 0.9;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    main{
+        width: 100%;
+    }
+    main .profile{
+        width: 90%;
+        background: red;
+        margin: 0 auto;
+    }
+    main .profile .social{
+        margin: 0 auto;
+    }
+
+
+}
+
+@media(max-width:1200px){
+    .link{
+        display: none;
+    }
+
+   
+ 
 }
