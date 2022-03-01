@@ -214,6 +214,12 @@ main{
     color: #fff;
     font-weight: bold;
 }
+
+footer{
+    background: var(--blue2);
+    padding:20px;
+    margin-top: 20px;
+}
 /* Responsive */
 
 @media(max-width:440px){

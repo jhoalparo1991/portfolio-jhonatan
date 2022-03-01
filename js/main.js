@@ -1,4 +1,9 @@
 let header = document.querySelector('header');
+let year = document.querySelector('.year');
+
+let date = new Date().getFullYear();
+
+year.textContent = date;
 
 document.addEventListener('scroll', (e)=>{
     let scroll = e.path[1].scrollY;
@@ -11,5 +16,3 @@ document.addEventListener('scroll', (e)=>{
     }
 })
 
-
-console.log(header);
