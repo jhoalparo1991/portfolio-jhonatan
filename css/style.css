@@ -261,6 +261,19 @@ footer{
         width: 156px !important;
         height: 114px;
     }
+    .card-box{
+        width: 296px;
+    }
+    
+    .card-body{
+        width:296px !important;
+    }
+    .academy-title{
+        text-align: center;
+    }
+    .card-footer{
+        text-align:center;
+    }
    
     
     
