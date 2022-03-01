@@ -2,6 +2,7 @@
 :root{
     --bg:#F5F5F5;
     --blue:#EAF2FD;
+    --blue2:#d8e5f7;
     --font-color:#464646;
 }
 
@@ -19,8 +20,14 @@ header{
     display:flex;
     justify-content: space-around;
     align-items: center;
-    margin: 34px;
-
+    /* margin: 34px; */
+    padding: 34px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+main{
+    padding-top: 80px;
 }
 .img-rounded{
     border-radius:50%;
@@ -141,9 +148,72 @@ header{
     justify-content:center;
     flex-direction: column;
     align-items:center;
-    border-radius:10px;
+    /* border-radius:10px; */
 }
 
+.box:hover{
+    opacity:0.4;
+    box-shadow: 5px 5px 5px #c9c9c9;
+    transition: 1s ease;
+}
+
+.academy{
+    background: var(--blue);
+    padding:20px;
+}
+.card-academy{
+    width:90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.card-box{
+    margin: 10px;
+    height:380px;
+}
+.card-body:hover{
+    border-radius:20px;
+    box-shadow: 5px 5px rgba(218, 217, 217, 0.2);
+    transition: 1s ease;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width:300px;
+    height:256px;
+    background:white;
+}
+.card-footer{
+    margin-top: 10px;
+}
+
+.academy-title{
+    font-size: 22px;
+    margin: 5px;
+    text-align:justify;
+}
+.card-body img{
+    width:90px;
+    height: 90px;
+
+}
+.status{
+    font-size: 16px;
+}
+
+.hidden{
+    background:var(--blue2);
+    transition:2s ease;
+    border-bottom: 2px solid rgb(99, 99, 99);
+}
+.nav-link:hover{
+    color: #fff;
+    font-weight: bold;
+}
 /* Responsive */
 
 @media(max-width:440px){
@@ -218,6 +288,25 @@ header{
     .box{
         width: 224px;
         height: 114px;
+    }
+ 
+    .card-academy{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:10px;
+    }
+    .card-box{
+      height: 192px;
+    }
+
+    .card-body{
+        width:224px;
+        height:118px;
+    }
+
+    .academy-title{
+        font-size: 16px;
     }
 }
 

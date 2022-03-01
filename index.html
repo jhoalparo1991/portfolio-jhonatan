@@ -16,11 +16,11 @@
         </div>
         <nav class="navbar">
             <ul class="nav-list">
-                <li class="nav-item"><a href="" class="nav-link">Sobre mí</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Hobbies</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Formacion</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">Sobre mí</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                <li class="nav-item"><a href="#academy" class="nav-link">Formacion</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
             </ul>
             <div class="contact">
                 <p class="email text-16 text-bold">jhoalparo1991@gmail.com</p>
@@ -29,7 +29,7 @@
     </header>
     <main>
         <section>
-            <article class="presentation">
+            <article class="presentation" id="about_me" name="about_me" >
                 <div class="presentation-group1">
                     <p class="presentation-title text-bold">Hola, soy Jhonatan Padilla</p>
                     <p class="presentation-description">
@@ -47,7 +47,7 @@
                     <img class="img-rounded" src="./img/foto.jpg" alt="Jhonatan Padilla Rovira">
                 </div>
             </article>
-            <article class="about">
+            <article class="about" name="about" id="about">
                 <div class="group">
                     <p class="text-title fs-32 text-bold">Sobre mí</p>
                 <p class="text-16">
@@ -61,7 +61,7 @@
                   </p>
                 </div>
             </article>
-            <article class="skills mt-20">
+            <article class="skills mt-20" id="skills" name="skills">
                 <p class="text-title fs-32 text-bold text-center mb-20">Skills</p>
                 <div class="card">
                     <div class="box">
@@ -86,7 +86,7 @@
                      </div>
                 </div>
             </article>
-            <article class="hobbies mt-20">
+            <article class="hobbies mt-20" id="hobbies" name="hobbies">
                 <p class="text-title fs-32 text-bold text-center mb-20">Hobbies</p>
                 <div class="card">
                     <div class="box">
@@ -107,7 +107,80 @@
                       </div>
                 </div>
             </article>
+            <article class="academy mt-20 " id="academy" name="academy">
+                <p class="text-title fs-32 text-bold text-center mb-20 mt-20">Formaciones</p>
+                <div class="card-academy">
+                    <div class="card-box">
+                        <div class="card-body">
+                            <a href="https://sitio.usanjose.edu.co/" target="_blank">
+                                <img src="./img/sanjose.png" alt="universidad sanjose">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                        <p class="text-bold academy-title">Ingenieria de Sistemas</p>
+                        <span class="status">Estado: <b>En curso</b> </span>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="card-body">
+                            <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank">
+                                <img src="./img/sena.png" alt="sena">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                        <p class="text-bold academy-title">Desarrollo de aplicaciones 
+                        <br>y servicios en la nube</p>
+                        <span class="status">Estado: <b>En curso</b> </span>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="card-body">
+                            <a href="https://www.aluracursos.com/" target="_blank">
+                                <img src="./img/alura.png" alt="alura">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                        <p class="text-bold academy-title">Desarrollo web</p>
+                        <span class="status">Estado: <b>En curso</b> </span>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="card-body">
+                            <a href="https://www.cies.edu.co/" target="_blank">
+                                <img src="./img/cies.jfif" alt="alura">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                        <p class="text-bold academy-title">Tecnico en sistemas</p>
+                        <span class="status">Estado: <b>Finalizado</b> </span>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div class="card-body">
+                            <a href="https://www.udemy.com/" target="_blank">
+                                <img src="./img/udemy.png" alt="udemy">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                        <p class="text-bold academy-title">
+                            <span class="status">Cursos realizados:</span>
+                            <ul>
+                                <li class="item">JavaScript</li>
+                                <li class="item">NodeJS</li>
+                                <li class="item">Python</li>
+                            </ul>
+                        </p>
+                        <span class="status">Estado: <b>Finalizado</b> </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
