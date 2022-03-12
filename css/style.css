@@ -235,7 +235,7 @@ footer{
 .card-group-2 > .title{
     padding:20px;
 }
-.card-group-2 > .btn{
+.card-group-2 > .btn, .group-button > .btn{
     text-decoration: none;
     padding:10px;
     margin-top: 10px;
@@ -258,6 +258,56 @@ footer{
 .outline-blue-fill:hover{
     background: var(--bg);
     color: #2A7AE4;
+}
+.form-contact{
+    background: var(--blue);
+    padding: 30px;
+}
+.form-contact .title{
+    margin: 20px;
+}
+
+.form-contact .group-text{
+    margin: 20px;
+    font-size: 16px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.group-contact{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background: white;
+    margin-bottom: 15px;
+    border-bottom: 3px solid rgb(216, 215, 215);
+}
+
+.form-control{
+    border: none;
+    padding: 10px;
+    color: var(--font-color);
+    outline: none;
+    font-size: 16px;
+}
+
+.img-phone{
+    width: 464px;
+}
+.btn-enviar{
+    border: none;
+}
+
+.message{
+    color: red;
+    margin-top:10px;
 }
 
 /* Responsive */
@@ -401,4 +451,10 @@ footer{
     margin-left: 20px;
 }
 
+}
+
+@media(max-width:913px){
+    .contact-image{
+        display: none;
+    }
 }
